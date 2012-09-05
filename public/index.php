@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ITS BETA - landing Page</title>
+    <title>Odus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Landing page,Subscribe">
     <meta name="author" content="">
@@ -29,54 +29,61 @@
 	<div class="container">
       <div class="row" id="header">
       	<div class="span12">
-       	 <h1><a href="#"><span id="it"><i class="icon-star"></i>ITS <i class="icon-star"></i></span><span id="beta">BETA</span></a></h1>
+       	 <h1><a href="#"><span id="it"></i>ITS</i></span><span id="beta">ODUS</span></a></h1>
         </div><!--end span12-->        
       </div><!--end row-->
       
       <div class="row" id="catchycontent">
       	<div class="span12">
-        <h2>Stay tuned, we are launching very soon... </h2>        
-        <p>ITS BETA is working hard to launch a new site that's going to revolutionize the way you do business. Leave us your email below, and we'll notify you the minute we open the doors. </p>        
+        <h2>Game still in early development phase...</h2>        
+        <p>Odus is still very early in development. It's not ready for a public beta yet, but drop me a line and we'll let let more people into testing as we can accomodate them.</p>        
         </div><!--end span12-->            
       </div><!--end row-->
       
       <div class="row" id="subscribe">
-      
+      <?php
+        session_start();
+        if(isset($_SESSION['done']))
+        {
+          echo "<h3>Will get back to you shortly!</h3><br>";
+        } else { ?>
       	<div id="mc_embed_signup">
-            <form action="http://doozypixels.us5.list-manage.com/subscribe/post?u=f0d1850fbb2d2d2d531287d35&amp;id=c74a5c548f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank">	
+            <form action="register.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank">	
             <input type="email" value="" name="EMAIL" class="span4 input-large email" id="mce-EMAIL" placeholder="email address" required>
             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-large">
         </form>
         </div>
+        
+        <?php } ?>
       </div><!--end row-->
       
       <div class="row" id="features">
       	<div class="span3 divider">
         	<div class="featureicon"><i class="icon-resize-full"></i></div>
-            <h3>Responsive</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
+            <h3>Fun</h3>
+            <p>Odus will be a very fun game.</p>
         </div>        
         <div class="span3 divider">
         	<div class="featureicon"><i class="icon-flag"></i></div>
-            <h3>Font Awesome Icons</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
+            <h3>Not Done Yet</h3>
+            <p>Been working on the game a while now, gonna be awesome.</p>
         </div>       
         <div class="span3 divider">
         	<div class="featureicon"><i class="icon-envelope"></i></div>
-            <h3>Mail Chimp Signup Form</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
+            <h3>Cool Mail Icon</h3>
+            <p>I'm not going to sign you up for spam. I wouldn't even know how.</p>
         </div>
          <div class="span3">
         	<div class="featureicon"><i class="icon-font"></i></div>
-            <h3>Google WebFonts</h3>
-            <p>Talk about one of the biggest features that your new website is going to have.</p>
+            <h3>Check out this A</h3>
+            <p>It's such an awesome A. I could tell you more about the game, but I won't.</p>
         </div>
       </div><!--end row-->
       
       <div class="row" id="footer">
-      <h4>For more details leading up to our launch <br/>follow us on twitter</h4>
-      <div class="footericon"><a href="https://twitter.com/madebyraj"><i class="icon-twitter-sign"></i></a></div>
-      <p>&copy;2012 Its Beta. All rights reserved.</p>
+      <h4>To keep up to date during development <br/>follow us on twitter</h4>
+      <div class="footericon"><a href="https://twitter.com/odus_game"><i class="icon-twitter-sign"></i></a></div>
+      <p>&copy;2012 Odus. All rights reserved.</p>
       </div><!--end row-->      
       </div><!--end container-->
       <!-- For IE 7 and 8 Media Query Support -->    
