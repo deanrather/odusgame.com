@@ -135,7 +135,7 @@ $dialogue4=nl2br($dialogue4);
         <div id="mc_embed_signup">
             <form action="<?php echo $playURL; ?>" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank"> 
             <input type="text" name="userName" class="span4 input-large email" id="mce-EMAIL" placeholder="username" required>
-            <input type="submit" value="Continue" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-large" style="width:150px; height:50px;">
+            <input type="submit" value="Continue" id="mc-embedded-subscribe" class="btn btn-success btn-large" style="width:150px; height:50px;">
         </form>
         </div>
       </div><!--end row-->
