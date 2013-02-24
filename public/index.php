@@ -5,8 +5,8 @@ $facebookURL = 'http://facebook.com/odusgame';
 $versionHistoryURL = '/?versions';
 $devToolsURL = '/?dev';
 $thanksURL = '/?thanks';
-$playURL = 'http://play.odusgame.local';
-$devLoginURL = 'http://dev.odusgame.local';
+$playURL = 'http://play.odusgame.com';
+$devLoginURL = 'http://dev.odusgame.com';
 $trelloURL = 'https://trello.com/board/odus/503c8214fbd50b857f1004ee';
 
 $tagline = "Odus hopes to be the SNES-style RPG we all love.. except with multiplayer. And time travel.";
