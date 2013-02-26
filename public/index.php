@@ -1,12 +1,14 @@
 <?php
 
+$tldn = stristr(__DIR__, 'C:') ? 'local' : 'com';
+
 $twitterURL = 'http://twitter.com/odus_game';
 $facebookURL = 'http://facebook.com/odusgame';
 $versionHistoryURL = '/?versions';
 $devToolsURL = '/?dev';
 $thanksURL = '/?thanks';
-$playURL = 'http://play.odusgame.com';
-$devLoginURL = 'http://dev.odusgame.com';
+$playURL = 'http://play.odusgame.'.$tldn;
+$devLoginURL = 'http://dev.odusgame.com'.$tldn;
 $trelloURL = 'https://trello.com/board/odus/503c8214fbd50b857f1004ee';
 
 $tagline = "Odus hopes to be the SNES-style RPG we all love.. except with multiplayer. And time travel.";
@@ -127,7 +129,7 @@ $dialogue4=nl2br($dialogue4);
             <form action="<?php echo $playURL.'/login'; ?>" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank"> 
             <input type="text" name="playerName" class="span4 input-large email" id="mce-EMAIL" placeholder="player name" required>
             <input type="hidden" name="demo" value="true">
-            <input type="submit" value="New Game" id="mc-embedded-subscribe" class="btn btn-success btn-large" style="width:150px; height:50px;">
+            <input type="submit" value="New Game" id="mc-embedded-play" class="btn btn-success btn-large" style="width:150px; height:50px;" autofocus>
             <p style="padding: 6px;">No need to create an account, login, or download anything!</p>
         </form>
         <img src="/assets/img/or.png" style="padding-bottom:16px" alt="or">
@@ -135,7 +137,7 @@ $dialogue4=nl2br($dialogue4);
         <div id="mc_embed_signup">
             <form action="<?php echo $playURL; ?>" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank"> 
             <input type="text" name="userName" class="span4 input-large email" id="mce-EMAIL" placeholder="username" required>
-            <input type="submit" value="Continue" id="mc-embedded-subscribe" class="btn btn-success btn-large" style="width:150px; height:50px;">
+            <input type="submit" value="Continue" id="mc-embedded-continue" class="btn btn-success btn-large" style="width:150px; height:50px;">
         </form>
         </div>
       </div><!--end row-->
