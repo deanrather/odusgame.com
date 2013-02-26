@@ -65,8 +65,8 @@ $dialogue4=nl2br($dialogue4);
     <meta charset="utf-8">
     <title>Odus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page,Subscribe">
-    <meta name="author" content="">
+    <meta name="description" content="<?php echo $tagline; ?>">
+    <meta name="author" content="Dean Rather">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
