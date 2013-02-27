@@ -22,6 +22,7 @@ $dialogue1 = "
 - playing without needing an account
 - works on desktop, mobile, or console
 - currency to win, lose, or spend on in-battle items
+- music
 And <a href='$versionHistoryURL'>so many more!</a>
 ";
 
@@ -34,7 +35,6 @@ $dialogue2 = "
 
 $heading3 = "In the pipeline";
 $dialogue3 = "
-- music
 - actually walking around on the map...
 - map editor for dev tools
 - quests, dungeons, etc.
