@@ -19,6 +19,7 @@ $dialogue1 = "
 - turn-based battle against random opponents
 - pvp w/ any number of players and npc's
 - loyalty system -- creatures join / leave your team
+- playing without needing an account
 - works on desktop, mobile, or console
 - currency to win, lose, or spend on in-battle items
 And <a href='$versionHistoryURL'>so many more!</a>
@@ -26,7 +27,6 @@ And <a href='$versionHistoryURL'>so many more!</a>
 
 $heading2 = "In Progess";
 $dialogue2 = "
-- playing without needing an account
 - bug: the final win/loss message of a battle is never displayed
 - better grammar / dialogue
 - battle animations
