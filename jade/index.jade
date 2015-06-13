@@ -1,0 +1,147 @@
+doctype html(lang='en')
+head
+    meta(charset='utf-8')
+    title Odus
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Odus hopes to be the SNES-style RPG we all love.. except with multiplayer. And time travel.')
+    meta(name='author', content='Dean Rather')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Styles
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    | &#x9;
+    link(href='assets/css/bootstrap-responsive.css', rel='stylesheet')
+    link(rel='stylesheet', href='assets/css/font-awesome.css')
+    link(href='assets/css/style-responsive-red.css', rel='stylesheet')
+    link(href='assets/css/style-switcher.css', rel='stylesheet')
+    // Google Web Font
+    link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700', rel='stylesheet', type='text/css')
+    //if IE 7
+      link(rel='stylesheet', href='assets/css/font-awesome-ie7.css')
+    // Le HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    // fav icons
+    link(rel='shortcut icon', href='assets/img/favicon.ico')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar        
+            span.icon-bar        
+            span.icon-bar      
+          .nav-collapse.collapse
+            ul.nav.pull-right
+              // <li><a href="/build">Build</a></li>
+              li
+                a(href='https://trello.com/board/odus/503c8214fbd50b857f1004ee') Roadmap          
+              li
+                a(href='/history') History
+              //
+                <li><a href="/thanks">Thanks</a></li>
+                <li><a href="/play">Play</a></li>
+    | &#x9;
+    .container
+      #header.row
+        .span12
+          h1
+            a(href='/')
+              img(src='assets/img/website-icon.png', alt='Odus Logo')
+        // end span12
+      // end row
+      #catchycontent.row
+        .span12
+          h2
+            | Odus hopes to be the SNES-style RPG we all love.. except with multiplayer. And time travel.    
+          p
+            | Odus is still very early in development. Feel free to have a play, and let me know what you think on 
+            a(href='http://twitter.com/odus_game') twitter
+            | , or on our 
+            a(href='http://facebook.com/odusgame') facebook
+        // end span12
+      // end row
+      #subscribe.row
+        img(src='/assets/img/maintenance.png', style='height: 40px')    
+        p The game is currently offline while I transition to a new host.    
+        p I&apos;ll have it back up as soon as possible    
+        p - Dean Rather (Saturday 13 June, 2015)
+        //
+          <div id="mc_embed_signup">
+          <form action="/play'" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank">
+          <input type="text" name="playerName" class="span4 input-large email" id="mce-EMAIL" placeholder="player name" required>
+          <input type="hidden" name="demo" value="true">
+          <input type="submit" value="New Game" id="mc-embedded-play" class="btn btn-success btn-large" style="width:150px; height:50px;" autofocus>
+          <p style="padding: 6px;">No need to create an account, login, or download anything!</p>
+          </form>
+          <img src="/assets/img/or.png" style="padding-bottom:16px" alt="or">
+          </div>
+          <div id="mc_embed_signup">
+          <form action="/play" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank">
+          <input type="text" name="userName" class="span4 input-large email" id="mce-EMAIL" placeholder="username" required>
+          <input type="submit" value="Continue" id="mc-embedded-continue" class="btn btn-success btn-large" style="width:150px; height:50px;">
+          </form>
+          </div>
+      // end row
+      #features.row
+        .span3.divider
+          .featureicon
+            i.icon-check        
+          h3 Current Features        
+          ul
+            li turn-based battle against random opponents          
+            li pvp w/ any number of players and npc&apos;s          
+            li loyalty system -- creatures join / leave yo
+            | ur team          
+            li playing without needing an account          
+            li works on desktop, mobile, or console          
+            li currency to win, lose, or spend on in-battle items          
+            li music        
+          p
+            | And 
+            a(href='/history') so many more!        
+        .span3.divider
+          .featureicon
+            i.icon-edit        
+          h3 In Progress        
+          ul
+            li bug: the final win/loss message of a battle is never displayed          
+            li better grammar / dialogue          
+            li battle animations       
+        .span3.divider
+          .featureicon
+            i.icon-thumbs-up        
+          h3 In the pipeline        
+          ul
+            li actually walking around on the map...        
+            li map editor for dev tools        
+            li quests, dungeons, etc.        
+          p
+            a(href='https://trello.com/board/odus/503c8214fbd50b857f1004ee') Loads More     
+        .span3
+          .featureicon
+            i.icon-heart        
+          h3 You can help!        
+          p I don&apos;t want your money... Only your time! Precious, precious time.        
+          p
+            | The 
+            a(href='/build') Odus Development Tools
+            |  allow you to easily contribute creatures &amp; attacks, artwork, and much more!
+      // end row
+      #footer.row
+        h4
+          | For updadtes on new features, follow us on 
+          a(href='http://twitter.com/odus_game') twitter
+          | , or 
+          a(href='http://facebook.com/odusgame') facebook  
+        .footericon
+          a(href='http://twitter.com/odus_game')
+            i.icon-twitter-sign    
+          a(href='http://facebook.com/odusgame')
+            i.icon-facebook-sign  
+        p &copy;2013 Odus. All rights reserved.
+      // end row
+    // end container
+    // For IE 7 and 8 Media Query Support
+    script(type='text/javascript', src='assets/js/respond.js')
+    // Contributors: I have to thank my friends who've helped build this. Namely Shaun and Reese for creating almost all the Creatures and Attacks. But also heaps of other people, who I'll list in more detail shortly. Including various artists who's work I've graciously borrowed from the internet. I will updating this with more detail shortly, but if I've used your work without permission, please let me know! Thanks!! Dean.
